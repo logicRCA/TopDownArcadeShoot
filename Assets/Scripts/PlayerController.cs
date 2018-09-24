@@ -10,6 +10,8 @@ public class PlayerController : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         rigidBody = GetComponent<Rigidbody>();
+        rigidBody.freezeRotation = true;
+
 	}
 
     public void Move(Vector3 velocity)
